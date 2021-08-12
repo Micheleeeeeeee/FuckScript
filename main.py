@@ -6,14 +6,24 @@ Please only run this if you're ONE HUNDRED percent sure.
 import time
 import os
 
-fuck_string = 'fuck string ' * 5000
+fuck_string = 'fuck string ' * 500
 
 def main():
   print("Running in 5 seconds...")
-  for i in range(1, 6):
+  for i in range(6, 1):
     time.sleep(1)
     print(str(i) + "...")
-  os.popen("echo " + fuck_string + " >> owo.txt")  
+  write()
+ 
+def write():
+  for i in range(1, 100000000):
+    os.popen("echo " + fuck_string + " >> owo.txt")  
+    if i == (100000000 / 2):
+      print("50% done")
+    elif i == (100000000 / 10):
+      print("10% done")
+    elif i == 5000:
+      print("5000 done")
   
 if __name__ == '__main__':
   main()
