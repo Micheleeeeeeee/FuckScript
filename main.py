@@ -15,3 +15,6 @@ def main():
     print(str(i) + "...")
   os.popen("echo " + fuck_string + " >> owo.txt")  
   
+if __name__ == '__main__':
+  main()
+  
