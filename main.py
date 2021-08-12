@@ -17,7 +17,8 @@ def main():
  
 def write():
   for i in range(1, 100000000):
-    os.popen("echo " + fuck_string + " >> owo" + str(i) + ".txt")  
+    with open('owo' + str(i) + '.txt' as f:
+              f.write(fuck_string)
     if i == (100000000 / 2):
       print("50% done")
     elif i == (100000000 / 10):
