@@ -17,7 +17,7 @@ def main():
  
 def write():
   for i in range(1, 100000000):
-    with open('owo' + str(i) + '.txt') as f:
+    with open('owo' + str(i) + '.txt', 'w+') as f:
               f.write(fuck_string)
     if i == (100000000 / 2):
       print("50% done")
